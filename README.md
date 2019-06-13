@@ -5,16 +5,24 @@ Encode and decode a local text file with password.
 ## Nim version
 
 ```
-Encrypt and decrypt text file (default name - passwords.txt).
+Encrypt and decrypt a file using a password.
 
 Usage: 
     vault open [file]
     vault close [file]
 
+Default file:
+    passwords.txt    
+
 WARNING: this program may overwrite or delete file content without 
-a possibilty of recovery. Passwords cannot be recovered.   
+a possibilty of recovery. Passwords cannot be recovered. Information 
+can be destroyed by repeated attempts of encryption/decryption. Use 
+at you own risk.   
 ```
+
 Uses [xxtea](https://github.com/xxtea/xxtea-nim)
+
+[Request for code review](https://codereview.stackexchange.com/questions/222172/file-encoder-decoder-in-nim-lang)
 
 ## Python version
 
